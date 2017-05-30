@@ -250,10 +250,10 @@
 		{
 			$cmd = $ssh->exec("sudo python /home/pi/Desktop/camera.py");
 			
-			$ssh->get("/home/pi/Desktop/test.jpg", "test.jpg");	
+			$ssh->get("/home/pi/Desktop/test.jpg", "photo.jpg");	
 				
 			print("	<script>
-						image.innerHTML = '<a href = 'test.jpg' target = '_blank'><img src = ".'"test.jpg"'." width = 800 height = 480></a>';
+						image.innerHTML = '<a title = ".'"photo.jpg"'." href = ".'"photo.jpg"'." target = ".'"_blank"'."><img src = ".'"photo.jpg"'." width = 800 height = 480></a>';
 					</script>");	
 		}
 	}	
